@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="typeColors.css" />
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="container">
+   <div class="headerTest">
+    <div class="title">
+    <h1>Poke<span class="vermelho">dex</span></h1>
+    </div>
+    <div class="search">
+    <input id="busca" type="text" placeholder="Insira o nome ou numero do pokemons"></input>
+    <button id="button" type="submit" onclick="pokeSearch()">Buscar</button>
+    </div>
+    </div>
+    <ul data-js="pokedex" class="pokedex"></ul>
+  </div>
+  <script src="app.js"></script>
+  <script src="busca.js"></script>
+</body>
+
+</html>

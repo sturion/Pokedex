@@ -1,0 +1,164 @@
+body {
+	background: #EFEFBB;
+	background: linear-gradient(to top,rgb(202, 202, 202), rgb(202, 202, 202));
+	color: white;
+	margin: 0;
+	font-family: rubik;
+}
+
+.container {
+	padding: 40px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 54px;
+	color: #fff;
+	-webkit-text-stroke-width: 0.2px;
+	-webkit-text-stroke-color: #000;
+
+}
+
+li {
+	display: grid;
+	list-style: none;
+	padding: 10px;
+	color: #222;
+	text-align: center;
+	border-radius: 30px;
+	position: relative;
+    flex-wrap: wrap;
+    align-content: center;
+	background-color: #fff;
+	box-shadow: 0 0 10px #000;
+}
+
+
+
+
+.pokedex {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
+	justify-content: center;
+	grid-gap: 15px;
+	padding-inline-start: 0;
+}
+
+
+.card-subtitle {
+	margin-top: -5px;
+	margin-right: 10px;
+	padding: 5px 10px 5px;
+	font-weight: lighter;
+    text-transform: uppercase;
+	z-index: 2;
+    position: relative;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    justify-content: right;
+	border: solid 1px #000;
+	border-radius: 5px;
+}
+
+.card::after {
+	content: "";
+  display: flex;
+  width: 50%;
+  height: 45%;
+  border-radius: 100%;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.6;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+}
+
+.card:hover {
+	animation: bounce 0.5s linear;
+	transition: transform 1s;
+	transform: scale(1.04);
+}
+
+.card-id {
+	text-transform: capitalize;
+	margin-left: 10px;
+	font-size: 140%;
+	font-weight: normal;
+    display: grid;
+	position: relative;
+	z-index: 2;
+    justify-content: center;
+	grid-auto-rows: 1;
+	margin-top: -5px;
+	
+
+}
+.closeButton {
+	position: relative;
+	display: grid;
+	grid-auto-rows: 1;
+	background-color: rgba(20, 20, 20, 0);
+	border-radius: 10px;
+	max-width: 50px;
+	max-height: 50px;
+	border: none;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+input {
+	max-width: 100%;
+	background-color: rgb(202, 202, 202);
+	border: none;
+	border-radius: 10px 0px 0px 10px;
+	width: 500px;
+	height: 50px;
+}
+
+#button {
+	background-color: rgb(202, 202, 202);
+	height: 52px;
+	border: none;
+	border-left: 1px solid #adadad;
+	border-radius: 0px 10px 10px 0px;
+}
+
+.card-image {
+	height: 150px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 2;
+	display: flex;
+	text-align: center;
+	filter: saturate(1.8);
+}
+
+.card-image:hover {
+	transform: rotate(0.03turn);
+	transition: transform 1s;
+}
+
+.headerTest {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 40px 0px 40px;
+	width: 95.5%;
+	background-color: #adadad;
+	border-radius: 40px;
+	box-shadow: 0 0 10px #000;
+	margin-right: 40px;
+	z-index: 3;
+}
+.search {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+.vermelho {
+	color: red;
+}
