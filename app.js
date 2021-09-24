@@ -28,8 +28,8 @@ const fetchPokemon = () => {
         pokemon.id
       }.png"/>
                 
-                <p class="card-subtitle ${types[0]}">${types[0]}</p>
-                <p class="card-subtitle ${types[1]}">${types[1]}</p>
+                <p class="card-subtitle ${types[0]}"><img class="typeImg" src="assets/${types[0]}.svg"/>${types[0]}</p>
+                <p class="card-subtitle ${types[1]}"><img class="typeImg" src="assets/${types[1]}.svg"/>${types[1]}</p>
                 
                 </li>
                 `;
