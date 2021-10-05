@@ -26,7 +26,7 @@ const fetchPokemon = () => {
                   pokemon.name
                 }" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${
         pokemon.id
-      }.png" onError="this.onerror=null;this.src='/assets/pokebola.png';"/>
+      }.png" onError="this.onerror=null;this.src='assets/pokebola.png';"/>
                 
                 <p class="card-subtitle ${types[0]}"><img class="typeImg" src="assets/${types[0]}.svg"/>${types[0]}</p>
                 <p class="card-subtitle ${types[1]}"><img class="typeImg" src="assets/${types[1]}.svg"/>${types[1]}</p>
