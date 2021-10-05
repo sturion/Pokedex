@@ -38,4 +38,12 @@ const pokeSearch = () => {
   
       ul.innerHTML = lisPokemons;
     });
-  };
+  }
+  
+  const inputEle = document.querySelector("#busca");
+inputEle.addEventListener('keyup', function(e){
+  var key = e.which || e.keyCode;
+  if (key == 13) { // codigo da tecla enter
+    pokeSearch();
+  }
+});

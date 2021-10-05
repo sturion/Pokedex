@@ -67,6 +67,7 @@ async function infiniteScroll() {
 }
   
 }
+
 fetchPokemon();
 
 
