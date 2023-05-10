@@ -1,2 +1,2 @@
 # Pokedex
-S2
+Corrigido!
